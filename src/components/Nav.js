@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../images/logo1.png";
+import img from "../logo1.png";
 import "./style.css";
 
 export default function Joke({ setup, punchline }) {

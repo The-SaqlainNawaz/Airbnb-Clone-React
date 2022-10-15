@@ -147,7 +147,7 @@ body {
 
 .footer {
   margin-top: 40px;
-  background-color: rgb(0, 0, 0, 0.2);
+  background-color: rgb(234, 234, 234);
   height: 80px;
   width: 100%;
   box-shadow: 5.98px 0px 50.6px rgb(177, 176, 176);
@@ -156,13 +156,14 @@ body {
   display: flex;
 }
 .fa {
+  cursor: pointer;
   padding: 20px;
   font-size: 35px;
   width: 20px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  color: white;
+  color: rgb(41, 41, 41);
 }
 .inters-detail {
   margin-bottom: 2rem;
@@ -175,7 +176,7 @@ body {
   color: #e4334b;
 }
 .fa-github:hover {
-  color: #c7c7c7;
+  color: #000000;
 }
 .email-icon:hover {
   background-color: rgb(52, 168, 83);
@@ -217,6 +218,6 @@ body {
 }
 @media only screen and (max-width: 569px) {
   .cover--image {
-    height: 300px;
+    height: 330px;
   }
 }
