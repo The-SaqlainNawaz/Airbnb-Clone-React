@@ -1,19 +1,29 @@
 * {
   box-sizing: border-box;
 }
+body::-webkit-scrollbar {
+  display: none;
+  min-width: 544px;
+}
+
+.card-section::-webkit-scrollbar {
+  display: none;
+}
 body {
   margin: 0;
   padding: 0;
+  overflow: overlay;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* Nav  styling*/
 
 .nav {
+  z-index: 1;
   background-color: rgb(255, 255, 255);
   display: flex;
   padding-left: 2rem;
-  height: 11vh;
+  height: 80px;
   box-shadow: 0px 2.98px 7.6px rgb(219, 216, 216);
   position: fixed;
   width: 100%;
@@ -21,7 +31,8 @@ body {
 }
 
 .nav--logo {
-  max-width: 80px;
+  max-width: 400px;
+  padding: 20px;
 }
 .nav--logo--text {
   height: 100px;
@@ -47,29 +58,42 @@ body {
 }
 .cover--image {
   padding: 40px;
+  padding-top: 60px;
   align-content: center;
   align-items: center;
   align-self: center;
-  height: 80vh;
-  width: 80vw;
+  height: 75vh;
+  width: 65vw;
 }
 .cover--heading {
+  margin-top: -20px;
   padding-left: 50px;
 }
 .cover--logo--para {
   padding-left: 50px;
   margin-top: -2px;
+  margin-bottom: 40px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Styling Card */
+.card-section {
+  padding: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  overflow-y: none;
+  overflow-x: scroll;
+}
 
 .card {
   box-shadow: 0px 2.98px 7.6px rgb(219, 216, 216);
   margin-top: 10px;
-  margin-left: 50px;
+  margin-left: 15px;
   width: 250px;
   height: 350px;
   border-radius: 10px;
+  cursor: pointer;
+  position: relative;
 }
 .card--image {
   justify-self: center;
@@ -109,8 +133,90 @@ body {
   color: #918e9b;
 }
 
+.card--badge {
+  color: black;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: snow;
+  padding: 5px 7px;
+  border-radius: 5Spx;
+  font-weight: 100;
+  box-shadow: 0px 5.98px 11.6px rgb(198, 195, 195);
+}
+
 .footer {
   margin-top: 40px;
-  background-color: rgba(30, 30, 30, 1);
-  height: 100px;
+  background-color: rgb(0, 0, 0, 0.2);
+  height: 80px;
+  width: 100%;
+  box-shadow: 5.98px 0px 50.6px rgb(177, 176, 176);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.fa {
+  padding: 20px;
+  font-size: 35px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+}
+.inters-detail {
+  margin-bottom: 2rem;
+}
+.fa-facebook:hover,
+.fa-twitter:hover {
+  color: #5093e2;
+}
+.fa-instagram:hover {
+  color: #e4334b;
+}
+.fa-github:hover {
+  color: #c7c7c7;
+}
+.email-icon:hover {
+  background-color: rgb(52, 168, 83);
+  border: none;
+}
+.link-icon:hover {
+  background-color: rgb(52, 168, 83);
+  border: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .card-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 636px) {
+  .cover--image {
+    height: 60vh;
+  }
+  .cover--heading {
+    margin-top: -20px;
+    padding-left: 50px;
+    font-size: bold;
+    font-size: larger;
+  }
+  .cover--logo--para {
+    padding-left: 50px;
+    margin-top: -2px;
+    margin-bottom: 40px;
+    font-size: medium;
+  }
+  .card--badge {
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 569px) {
+  .cover--image {
+    height: 300px;
+  }
 }

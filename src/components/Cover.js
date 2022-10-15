@@ -10,10 +10,7 @@ export default function Cover() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique natus
         laudantium consequuntur officia, id accusamus ab soluta obcaecati eum
         molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Similique natus laudantium consequuntur officia, id accusamus ab soluta
-        obcaecati eum molestiae! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Similique natus laudantium consequuntur officia, id
-        accusamus ab soluta obcaecati eum molestiae!
+        Similique natus laudantium consequuntur officia.
       </p>
     </div>
   );
